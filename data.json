@@ -1,0 +1,125 @@
+{
+    "profile": {
+        "name": "Wicaksono",
+        "title": "Junior Programmer & Visual Creator",
+        "bio": "Act more, imagine less.\nLearning by building real projects.",
+        "email": "amrlwcksn@gmail.com",
+        "instagram": "amirulwicaksono_",
+        "instagramUrl": "https://www.instagram.com/amirulwicaksono_/"
+    },
+    "portfolio": [
+        {
+            "id": "Event documentation",
+            "category": "Event Documentation",
+            "title": "Event ",
+            "image": "Assets/EventDocumentation/eventcover.png",
+            "description": "Documentation of events.",
+            "gallery": [
+                "Assets/EventDocumentation/(1).jpeg",
+                "Assets/EventDocumentation/(2).jpg",
+                "Assets/EventDocumentation/(3).jpeg",
+                "Assets/EventDocumentation/(4).jpg",
+                "Assets/EventDocumentation/(5).jpg",
+                "Assets/EventDocumentation/(6).jpg",
+                "Assets/EventDocumentation/(7).jpg",
+                "Assets/EventDocumentation/(8).jpg",
+                "Assets/EventDocumentation/(9).jpg",
+                "Assets/EventDocumentation/(10).jpeg"
+            ]
+        },
+        {
+            "id": "graduation",
+            "category": "Graduation Picture",
+            "title": "Graduation",
+            "image": "Assets/Graduation/graduationcover.jpg",
+            "description": "Celebrating the achievements of the newest graduates with a vibrant campus photoshoot.",
+            "gallery": [
+                "Assets/Graduation/(1).jpg",
+                "Assets/Graduation/(2).jpg",
+                "Assets/Graduation/(3).jpg",
+                "Assets/Graduation/(4).jpg"
+            ]
+        },
+        {
+            "id": "wedding",
+            "category": "Wedding Picture",
+            "title": "Wedding",
+            "image": "Assets/Wedding/weddingcover.jpeg",
+            "description": "A beautiful seaside wedding capturing the raw emotion and scenic beauty of the coast.",
+            "gallery": [
+                ""
+            ]
+        }
+    ],
+    "moodboard_section": {
+        "title": "Mood Board",
+        "buttons": [
+            {
+                "label": "Wedding Inspiration",
+                "target_id": "mood-wedding"
+            },
+            {
+                "label": "Graduation Ideas",
+                "target_id": "mood-grad"
+            },
+            {
+                "label": "Engagement Vibes",
+                "target_id": "mood-engagement"
+            }
+        ]
+    },
+    "moodboard_galleries": [
+        {
+            "id": "mood-wedding",
+            "category": "Mood Board",
+            "title": "Wedding Inspiration",
+            "description": "Curated collection of wedding aesthetics, poses, and color palettes.",
+            "gallery": [
+                "Assets/Wedding/1.jpg",
+                "Assets/Wedding/2.jpg",
+                "Assets/Wedding/3.jpg",
+                "Assets/Wedding/4.jpg"
+            ]
+        },
+        {
+            "id": "mood-grad",
+            "category": "Mood Board",
+            "title": "Graduation Ideas",
+            "description": "Fun and formal graduation pose ideas for the perfect celebration.",
+            "gallery": [
+                "Assets/Graduation/1.jpg",
+                "Assets/Graduation/2.jpg",
+                "Assets/Graduation/3.jpg"
+            ]
+        },
+        {
+            "id": "mood-engagement",
+            "category": "Mood Board",
+            "title": "Engagement Vibes",
+            "description": "Romantic and candid engagement shot inspirations.",
+            "gallery": [
+                "Assets/Engagment/(1).jpg",
+                "Assets/Engagment/(2).jpg",
+                "Assets/Engagment/(3).jpg",
+                "Assets/Engagment/(4).jpg",
+                "Assets/Engagment/(5).jpg",
+                "Assets/Engagment/(6).jpg",
+                "Assets/Engagment/(7).jpg",
+                "Assets/Engagment/(8).jpg",
+                "Assets/Engagment/(9).jpg",
+                "Assets/Engagment/(10).jpg",
+                "Assets/Engagment/(11).jpg",
+                "Assets/Engagment/(12).jpg",
+                "Assets/Engagment/(13).jpg",
+                "Assets/Engagment/(14).jpg",
+                "Assets/Engagment/(15).jpg"
+            ]
+        }
+    ],
+    "business": {
+        "name": "W64Garage",
+        "description": "Reseller Hot Wheels & Diecast Collectibles.",
+        "link": "https://shopee.co.id/w64garage",
+        "linkText": "Shop Now"
+    }
+}
