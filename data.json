@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "Wicaksono",
-        "image": "public/profile.jpeg",
+        "image": "assets/profile.jpeg",
         "contact": {
             "personalEmail": "amrlwcksn@gmail.com",
             "instagramUrl": "https://www.instagram.com/amirulwicaksono_/",
