@@ -21,7 +21,6 @@ body.light-mode {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
 }
 
 body {
@@ -34,29 +33,44 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Custom Cursor */
-.cursor-dot,
-.cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9999;
-    pointer-events: none;
+/* Custom Cursor - Desktop Only */
+@media (pointer: fine) and (min-width: 1025px) {
+    body {
+        cursor: none;
+    }
+
+    .cursor-dot,
+    .cursor-outline {
+        position: fixed;
+        top: -100px;
+        left: -100px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 9999;
+        pointer-events: none;
+        display: block;
+    }
+
+    .cursor-dot {
+        width: 6px;
+        height: 6px;
+        background-color: var(--text-color);
+    }
+
+    .cursor-outline {
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--secondary-text);
+        transition: width 0.3s, height 0.3s, background-color 0.3s;
+    }
 }
 
-.cursor-dot {
-    width: 6px;
-    height: 6px;
-    background-color: var(--text-color);
-}
+@media (pointer: coarse) or (max-width: 1024px) {
 
-.cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--secondary-text);
-    transition: width 0.3s, height 0.3s, background-color 0.3s;
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
 }
 
 /* Aurora Flares */
@@ -285,6 +299,37 @@ section {
     font-size: 1.5rem;
     line-height: 1.6;
     max-width: 800px;
+}
+
+.about-text a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--secondary-text);
+    transition: var(--transition);
+}
+
+.about-text a:hover {
+    border-bottom-color: var(--text-color);
+    opacity: 0.8;
+}
+
+.program-label {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    font-weight: 300;
+}
+
+.program-label a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    border-bottom: 1px aria-hidden var(--border-color);
+    transition: var(--transition);
+}
+
+.program-label a:hover {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--secondary-text);
 }
 
 /* Social Activity */

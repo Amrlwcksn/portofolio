@@ -14,7 +14,8 @@
             "title": "Call me",
             "bio": "Junior Web Developer & Content Creator.",
             "about_title": "About Me",
-            "about": "I have an interest in various fields, particularly photography, videography, and the exploration of evolving technology.",
+            "about": "I am a student at the <a href=\"https://upgris.ac.id/\" target=\"_blank\">Universitas PGRI Semarang</a>. I have an interest in various fields, particularly photography, videography, and the exploration of evolving technology.",
+            "program": "Major in <a href=\"https://pti.upgris.ac.id/\" target=\"_blank\">Information Technology Education</a>",
             "social_title": "What I Do & Share",
             "social": {
                 "instagram": {
@@ -44,7 +45,8 @@
             "title": "Panggil aku",
             "bio": "Junior Web Developer & Content Creator.",
             "about_title": "Tentang Saya",
-            "about": "Saya memiliki ketertarikan pada berbagai bidang, khususnya fotografi, videografi, serta eksplorasi teknologi yang terus berkembang.",
+            "about": "Saya adalah Mahasiswa <a href=\"https://upgris.ac.id/\" target=\"_blank\">Universitas PGRI Semarang</a>. Saya memiliki ketertarikan pada berbagai bidang, khususnya fotografi, videografi, serta eksplorasi teknologi yang terus berkembang.",
+            "program": "Prodi <a href=\"https://pti.upgris.ac.id/\" target=\"_blank\">Pendidikan Teknologi Informasi</a>",
             "social_title": "Apa yang Saya Lakukan & Bagikan.",
             "social": {
                 "instagram": {

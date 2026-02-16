@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cursorDot = document.getElementById('cursor-dot');
-    const cursorOutline = document.getElementById('cursor-outline');
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
     const nav = document.querySelector('nav');
+    const cursorDot = document.getElementById('cursor-dot');
+    const cursorOutline = document.getElementById('cursor-outline');
 
     // Language Switcher Elements
     const langEnBtn = document.getElementById('lang-en');
@@ -21,17 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = localStorage.getItem('theme') || 'dark';
     if (currentTheme === 'light') {
         body.classList.add('light-mode');
-        themeToggleBtn.innerHTML = moonIcon;
+        if (themeToggleBtn) themeToggleBtn.innerHTML = moonIcon;
     } else {
-        themeToggleBtn.innerHTML = sunIcon;
+        if (themeToggleBtn) themeToggleBtn.innerHTML = sunIcon;
     }
 
-    themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-        const isLight = body.classList.contains('light-mode');
-        themeToggleBtn.innerHTML = isLight ? moonIcon : sunIcon;
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    });
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            const isLight = body.classList.contains('light-mode');
+            themeToggleBtn.innerHTML = isLight ? moonIcon : sunIcon;
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    }
 
     // Language Logic
     function updateLangButtons() {
@@ -65,23 +67,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Cursor Logic
-    window.addEventListener('mousemove', (e) => {
-        const posX = e.clientX;
-        const posY = e.clientY;
+    // Cursor Logic - Optimized for Desktop Fine Pointer
+    if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
 
-        if (cursorDot) {
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
-        }
 
-        if (cursorOutline) {
             cursorOutline.animate({
                 left: `${posX}px`,
                 top: `${posY}px`
             }, { duration: 500, fill: "forwards" });
-        }
-    });
+        });
+    }
 
     // Scroll Logic
     window.addEventListener('scroll', () => {
@@ -131,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (profileImg) profileImg.src = common.image;
 
             setText('profile-name', common.name);
-            setText('profile-full-name', common.fullName);
             setQueryText('.hero .subtitle', langData.title);
             setText('profile-bio', langData.bio);
         } catch (e) { console.error("Error rendering Hero:", e); }
@@ -139,7 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // About
             setQueryText('.about h2', langData.about_title);
-            setText('profile-about', langData.about);
+            const aboutEl = document.getElementById('profile-about');
+            if (aboutEl) aboutEl.innerHTML = langData.about;
+            const programEl = document.getElementById('profile-program');
+            if (programEl) programEl.innerHTML = langData.program || '';
+            setText('profile-full-name', common.fullName);
         } catch (e) { console.error("Error rendering About:", e); }
 
         try {
