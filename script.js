@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (profileImg) profileImg.src = common.image;
 
             setText('profile-name', common.name);
+            setText('profile-full-name', common.fullName);
             setQueryText('.hero .subtitle', langData.title);
             setText('profile-bio', langData.bio);
         } catch (e) { console.error("Error rendering Hero:", e); }

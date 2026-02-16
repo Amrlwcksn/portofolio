@@ -233,6 +233,17 @@ section {
     transition: transform 0.5s ease;
 }
 
+.full-name-label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+}
+
 .profile-img-container:hover img {
     transform: scale(1.1);
 }
