@@ -201,4 +201,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (e) { console.error("Error rendering Footer:", e); }
     }
+
+    // Logo smooth scroll to top
+    const logoTop = document.getElementById('logo-top');
+    if (logoTop) {
+        logoTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Intersection Observer for Scroll Reveal
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Optional: stop observing once revealed
+                // observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const revealObserver = new IntersectionObserver(revealCallback, {
+        threshold: 0.15
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+    });
 });
