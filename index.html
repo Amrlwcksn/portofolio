@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wicaksono | Portfolio</title>
+    <title>Wicaksono | Minimalist Portfolio</title>
     <meta name="description" content="Portfolio of Wicaksono - Visual Creator & Developer">
     <link rel="stylesheet" href="style.css">
 
@@ -25,8 +25,13 @@
     <nav>
         <div class="logo">W.</div>
         <div class="nav-right">
+            <div class="lang-switch">
+                <button id="lang-en" class="lang-btn">EN</button>
+                <span>/</span>
+                <button id="lang-id" class="lang-btn active">ID</button>
+            </div>
             <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
-                <!-- Sun Icon (Default/Light) -->
+                <!-- Sun Icon -->
                 <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
@@ -45,65 +50,86 @@
     </nav>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <p class="subtitle fade-in">Portfolio</p>
-                <h1 class="title fade-in-up" id="profile-name">Loading...</h1>
-                <p class="bio fade-in-up delay-1" id="profile-bio"></p>
-                <p class="role fade-in-up delay-2" id="profile-title"></p>
+                <p class="subtitle fade-in">Visual Creator & Developer</p>
+                <h1 class="title fade-in-up" id="profile-name">Wicaksono</h1>
+                <p class="bio fade-in-up delay-1" id="profile-bio">Minimalist by design, builder by heart.</p>
             </div>
         </section>
 
-        <!-- Mood Board Section -->
-        <section class="moodboard fade-in-up">
+        <!-- About Section -->
+        <section class="about fade-in-up">
             <div class="container">
-                <div class="moodboard-content">
-                    <h2 id="moodboard-title">Mood Board</h2>
-                    <div class="moodboard-buttons" id="moodboard-buttons">
-                        <!-- Buttons injected via JS -->
+                <div class="profile-img-container fade-in">
+                    <img id="profile-img" src="" alt="Wicaksono">
+                </div>
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <p class="about-text" id="profile-about"></p>
+            </div>
+        </section>
+
+        <!-- Social Activity Section -->
+        <section class="social-activity fade-in-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2 id="social-title">What I Do</h2>
+                </div>
+                <div class="social-grid">
+                    <div class="social-card">
+                        <div class="card-header">
+                            <span class="platform" id="instagram-platform">Instagram</span>
+                            <span class="handle" id="instagram-handle">amirulwicaksono_</span>
+                        </div>
+                        <p id="instagram-activity"></p>
+                        <a href="#" id="instagram-link" class="social-cta" target="_blank">Follow on Instagram</a>
+                    </div>
+                    <div class="social-card">
+                        <div class="card-header">
+                            <span class="platform" id="tiktok-platform">TikTok</span>
+                            <span class="handle" id="tiktok-handle">@amirul.wicaksono</span>
+                        </div>
+                        <p id="tiktok-activity"></p>
+                        <a href="#" id="tiktok-link" class="social-cta" target="_blank">Watch on TikTok</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="gallery">
+        <!-- Contact Section -->
+        <section class="contact fade-in-up" id="contact">
             <div class="container">
-                <div class="section-header fade-in-up">
-                    <h2>Selected Works</h2>
-                    <div class="categories" id="categories">
-                        <button class="active" data-filter="all">All</button>
-                        <!-- Categories injected via JS -->
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="label">Personal</span>
+                        <a href="mailto:amrlwcksn@gmail.com" id="personal-email"
+                            class="contact-link-large">amrlwcksn@gmail.com</a>
                     </div>
-                </div>
-                <div class="grid" id="portfolio-grid">
-                    <!-- Portfolio items injected via JS -->
-                </div>
-            </div>
-        </section>
-
-        <section class="business fade-in-up">
-            <div class="container">
-                <div class="business-card">
-                    <span class="tag">Small Business</span>
-                    <h3 id="business-name">Loading...</h3>
-                    <p id="business-desc"></p>
-                    <a href="#" id="business-link" class="btn-arrow">Visit Shop <span class="arrow">→</span></a>
+                    <div class="contact-item">
+                        <span class="label">Social DM</span>
+                        <a href="https://www.instagram.com/amirulwicaksono_/" id="instagram-dm"
+                            class="contact-link-large" target="_blank">Instagram DM</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Social DM</span>
+                        <a href="https://github.com/Amrlwcksn" id="github-link" class="contact-link-large"
+                            target="_blank">Github</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="contact-info">
-                    <h3>Hubungi</h3>
-                    <a href="" id="email-link" class="email-link">amrlwcksn@gmail.com</a>
-                    <a href="" id="instagram-link" class="social-link" target="_blank">Instagram</a>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 Wicaksono. All rights reserved.</p>
-                </div>
+                <p>&copy; 2025 Wicaksono. All rights reserved.</p>
             </div>
         </div>
     </footer>

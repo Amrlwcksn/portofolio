@@ -1,125 +1,73 @@
 {
-    "profile": {
+    "common": {
         "name": "Wicaksono",
-        "title": "Junior Programmer & Visual Creator",
-        "bio": "Act more, imagine less.\nLearning by building real projects.",
-        "email": "amrlwcksn@gmail.com",
-        "instagram": "amirulwicaksono_",
-        "instagramUrl": "https://www.instagram.com/amirulwicaksono_/"
-    },
-    "portfolio": [
-        {
-            "id": "Event documentation",
-            "category": "Event Documentation",
-            "title": "Event ",
-            "image": "Assets/EventDocumentation/eventcover.png",
-            "description": "Documentation of events.",
-            "gallery": [
-                "Assets/EventDocumentation/(1).jpeg",
-                "Assets/EventDocumentation/(2).jpg",
-                "Assets/EventDocumentation/(3).jpeg",
-                "Assets/EventDocumentation/(4).jpg",
-                "Assets/EventDocumentation/(5).jpg",
-                "Assets/EventDocumentation/(6).jpg",
-                "Assets/EventDocumentation/(7).jpg",
-                "Assets/EventDocumentation/(8).jpg",
-                "Assets/EventDocumentation/(9).jpg",
-                "Assets/EventDocumentation/(10).jpeg"
-            ]
-        },
-        {
-            "id": "graduation",
-            "category": "Graduation Picture",
-            "title": "Graduation",
-            "image": "Assets/Graduation/graduationcover.jpg",
-            "description": "Celebrating the achievements of the newest graduates with a vibrant campus photoshoot.",
-            "gallery": [
-                "Assets/Graduation/(1).jpg",
-                "Assets/Graduation/(2).jpg",
-                "Assets/Graduation/(3).jpg",
-                "Assets/Graduation/(4).jpg"
-            ]
-        },
-        {
-            "id": "wedding",
-            "category": "Wedding Picture",
-            "title": "Wedding",
-            "image": "Assets/Wedding/weddingcover.jpeg",
-            "description": "A beautiful seaside wedding capturing the raw emotion and scenic beauty of the coast.",
-            "gallery": [
-                ""
-            ]
+        "image": "public/WhatsApp Image 2026-02-16 at 18.12.05.jpeg",
+        "contact": {
+            "personalEmail": "amrlwcksn@gmail.com",
+            "instagramUrl": "https://www.instagram.com/amirulwicaksono_/",
+            "githubUrl": "https://github.com/Amrlwcksn"
         }
-    ],
-    "moodboard_section": {
-        "title": "Mood Board",
-        "buttons": [
-            {
-                "label": "Wedding Inspiration",
-                "target_id": "mood-wedding"
-            },
-            {
-                "label": "Graduation Ideas",
-                "target_id": "mood-grad"
-            },
-            {
-                "label": "Engagement Vibes",
-                "target_id": "mood-engagement"
-            }
-        ]
     },
-    "moodboard_galleries": [
-        {
-            "id": "mood-wedding",
-            "category": "Mood Board",
-            "title": "Wedding Inspiration",
-            "description": "Curated collection of wedding aesthetics, poses, and color palettes.",
-            "gallery": [
-                "Assets/Wedding/1.jpg",
-                "Assets/Wedding/2.jpg",
-                "Assets/Wedding/3.jpg",
-                "Assets/Wedding/4.jpg"
-            ]
+    "languages": {
+        "en": {
+            "title": "Call me",
+            "bio": "Junior Web Developer & Content Creator.",
+            "about_title": "About Me",
+            "about": "I have an interest in various fields, particularly photography, videography, and the exploration of evolving technology.",
+            "social_title": "What I Do & Share",
+            "social": {
+                "instagram": {
+                    "platform": "Instagram",
+                    "username": "amirulwicaksono_",
+                    "activity": "Showcasing computer technology, creative projects, and personal interests.",
+                    "cta": "View on Instagram",
+                    "url": "https://www.instagram.com/amirulwicaksono_/"
+                },
+                "tiktok": {
+                    "platform": "TikTok",
+                    "username": "@amirul.wicaksono",
+                    "activity": "A space to share and express my passion for automotive and other interests.",
+                    "cta": "Explore on TikTok",
+                    "url": "https://www.tiktok.com/@amirul.wicaksono"
+                }
+            },
+            "contact_title": "Contact",
+            "contact_labels": {
+                "personal": "Personal",
+                "instagram": "Instagram DM",
+                "github": "Github"
+            },
+            "footer": "All rights reserved."
         },
-        {
-            "id": "mood-grad",
-            "category": "Mood Board",
-            "title": "Graduation Ideas",
-            "description": "Fun and formal graduation pose ideas for the perfect celebration.",
-            "gallery": [
-                "Assets/Graduation/1.jpg",
-                "Assets/Graduation/2.jpg",
-                "Assets/Graduation/3.jpg"
-            ]
-        },
-        {
-            "id": "mood-engagement",
-            "category": "Mood Board",
-            "title": "Engagement Vibes",
-            "description": "Romantic and candid engagement shot inspirations.",
-            "gallery": [
-                "Assets/Engagment/(1).jpg",
-                "Assets/Engagment/(2).jpg",
-                "Assets/Engagment/(3).jpg",
-                "Assets/Engagment/(4).jpg",
-                "Assets/Engagment/(5).jpg",
-                "Assets/Engagment/(6).jpg",
-                "Assets/Engagment/(7).jpg",
-                "Assets/Engagment/(8).jpg",
-                "Assets/Engagment/(9).jpg",
-                "Assets/Engagment/(10).jpg",
-                "Assets/Engagment/(11).jpg",
-                "Assets/Engagment/(12).jpg",
-                "Assets/Engagment/(13).jpg",
-                "Assets/Engagment/(14).jpg",
-                "Assets/Engagment/(15).jpg"
-            ]
+        "id": {
+            "title": "Panggil aku",
+            "bio": "Junior Web Developer & Content Creator.",
+            "about_title": "Tentang Saya",
+            "about": "Saya memiliki ketertarikan pada berbagai bidang, khususnya fotografi, videografi, serta eksplorasi teknologi yang terus berkembang.",
+            "social_title": "Apa yang Saya Lakukan & Bagikan.",
+            "social": {
+                "instagram": {
+                    "platform": "Instagram",
+                    "username": "amirulwicaksono_",
+                    "activity": "Berbagi seputar teknologi komputer serta ragam aktivitas kreatif yang saya minati.",
+                    "cta": "Tonton di Instagram",
+                    "url": "https://www.instagram.com/amirulwicaksono_/"
+                },
+                "tiktok": {
+                    "platform": "TikTok",
+                    "username": "@amirul.wicaksono",
+                    "activity": "Wadah untuk menyalurkan dan berbagi hobi otomotif serta berbagai ketertarikan lainnya.",
+                    "cta": "Ikuti di Tiktok",
+                    "url": "https://www.tiktok.com/@amirul.wicaksono"
+                }
+            },
+            "contact_title": "Kontak",
+            "contact_labels": {
+                "personal": "Pribadi",
+                "instagram": "Instagram DM",
+                "github": "Github"
+            },
+            "footer": "Hak cipta dilindungi undang-undang."
         }
-    ],
-    "business": {
-        "name": "W64Garage",
-        "description": "Reseller Hot Wheels & Diecast Collectibles.",
-        "link": "https://shopee.co.id/w64garage",
-        "linkText": "Shop Now"
     }
 }
